@@ -1,11 +1,12 @@
 package entities.objects;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Pessoa {
     private String nome;
-    private List<Aluguel> alugueis;
+    protected List<Aluguel> alugueis;
     private String endereco;
     private String telefone;
     private String email;

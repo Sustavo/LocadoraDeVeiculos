@@ -1,5 +1,6 @@
 package entities.objects;
 
+import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.Date;
 
@@ -9,6 +10,8 @@ public class Aluguel {
     private LocalDateTime devolucao;
     private String localAluguel;
     private String localDevolucao;
+
+    private double valorAluguel;
 
     public Aluguel(Veiculo veiculo, LocalDateTime alugado, LocalDateTime devolucao, String localAluguel, String localDevolucao) {
         this.veiculo = veiculo;
@@ -58,4 +61,11 @@ public class Aluguel {
         this.localDevolucao = localDevolucao;
     }
 
+    public double getValorAluguel() {
+        return valorAluguel;
+    }
+
+    public void setValorAluguel(double valorAluguel) {
+        this.valorAluguel = valorAluguel;
+    }
 }
